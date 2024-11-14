@@ -1,12 +1,3 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet">
-</head>
-
-<body>
-    <script>
         //1 и 2 задание, калькулятор со всеми арифм операциями
         var a = prompt("Введите число: ");
         a = parseInt(a);
@@ -18,7 +9,7 @@
         var proizv = 0;
         var ostatok = 0;
         var stepen = 0;
-        var object = {
+        var obj = {
             sum: (a + b) ,
             raznost: (a - b) ,
             chastnoe:  (a / b),
@@ -26,8 +17,4 @@
             ostatok:  (a % b),
             stepen: (a ** b)
         };
-        console.log(object);
-
-    </script>
-</body>
-</html>     
+        document.write('Сумма:'+ obj.sum+ ' ' +'Разность:'+obj.raznost+ ' ' +'Частное:'+obj.chastnoe+ ' ' +'Произведение:'+obj.proizv+ ' ' + 'Остаточное деление:'+obj.ostatok+ ' ' + 'Степень:'+obj.stepen);
