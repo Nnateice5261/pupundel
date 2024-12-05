@@ -1,0 +1,228 @@
+html {
+ background-color: rgba(125, 182, 173, 0.3);
+ font-family: sans-serif; /* Добавим общий шрифт */
+}
+
+body {
+ margin: 0;
+}
+
+.header {
+  background-color: rgb(40, 40, 40);
+ color: white; /* Добавим белый цвет текста */
+ padding: 1rem 0; /* Добавим отступы */
+}
+
+.header_namelogo {
+ display: flex;
+ justify-content: center;
+ align-items: center; /* Выравнивание логотипа и названия по вертикали */
+}
+
+.header__name {
+ font-size: 24px;
+ font-weight: bold;
+ margin-left: 1rem; /* Отступ от логотипа */
+}
+
+.header__logo {
+ margin-right: 1rem; /* Отступ от названия */
+}
+
+.header__logo-img {
+ width: 50px; /* Установим фиксированную ширину для логотипа */
+ height: auto; /* Сохраним пропорции */
+}
+
+.header__nav {
+ display: flex;
+ justify-content: center; /* Центрирование пунктов меню */
+ margin-top: 1rem;
+}
+
+.header__nav-link {
+ margin-left: 10px;
+ text-decoration: none;
+ color: white; /* Белый цвет ссылок */
+ padding: 0.5rem 1rem; /* Добавим отступы */
+ border-radius: 5px;
+ transition: background-color 0.3s;
+}
+
+.header__nav-link:hover {
+ background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.main {
+ display: flex;
+ padding: 20px;
+}
+
+.main__aside_left, .main__aside_right {
+ width: 200px;
+ padding: 10px;
+ background-color: rgb(40, 40, 40);
+ color: white; /* Белый цвет текста */
+ border-radius: 5px;
+}
+
+.main__aside_right {
+ margin-left: auto;
+ margin-right: 0;
+}
+
+.main__section {
+ flex-grow: 1;
+ padding: 1rem;
+}
+
+.main__section__arcticle {
+ border: 1px solid teal;
+ background-color: #afafaf;
+ margin-bottom: 1rem;
+ padding: 1rem;
+ border-radius: 5px;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.arcticle-title {
+ font-size: 1.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.arcticle__textimage {
+ display: flex;
+ align-items: center; /* Выравнивание текста и изображения по вертикали */
+}
+
+.arcticle__textimage-img {
+ max-width: 150px; /* Используем max-width для адаптивности */
+ margin-right: 1rem;
+ border-radius: 5px;
+}
+
+.arcticle__textimage-text {
+  flex-grow: 1;
+}
+
+
+
+.footer__logo{
+  background-image: url('/public/black_on_white.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 175px;
+  height: 150px;
+}
+.footer__nav{
+  display:grid;
+  grid-template-columns: repeat(3, 120px );
+  grid-template-rows: repeat(4, 35px);
+}
+.footer__nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+ }
+.Footer{
+display:flex;
+flex-direction: row;
+height: 250px;
+width:100%;
+justify-content: space-evenly; 
+border: 1px solid rgba(255, 255, 255, 0.466);
+align-items: center;
+background-color: rgb(40, 40, 40);
+}
+.footer__links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 75px;
+  width: 250px;
+}
+.footer__links a:hover{
+  filter: brightness(0.7);
+}
+.footer__links img{
+  object-fit: contain;
+}
+.footer__links_vk{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+.footer__links_yt{
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384060.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+.footer__links_tg{
+  background-image: url('https://pngicon.ru/file/uploads/telegram.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+.footer__links_obertka{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer__button{
+   border-radius: 50%;
+   z-index: 1;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+  height: 40px;
+  width: 100px;
+}
+.footer__links_obertka button:hover{
+  filter: brightness(0.7);
+}
+h1{
+  color:rgba(136, 136, 136, 0.984);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  display:flex;
+  justify-content: center;
+}
+a {
+  color:rgba(136, 136, 136, 0.984);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  display:flex;
+  justify-content: center;
+}
+p{
+  color:rgba(161, 161, 161, 0.984);
+}
+h2{
+  color:rgba(161, 161, 161, 0.984);
+}
+.advertise_img{
+  height:65%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://www.uainfo.com/photos/small/1007055-0.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination__title{
+  color: rgb(40, 40, 40);
+}
+.destination__description{
+  color: rgb(76, 76, 76);
+}
