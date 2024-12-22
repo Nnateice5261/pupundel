@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    background-image: url('https://avatars.mds.yandex.net/i?id=a184fe3a64a479351cbc841f4475cced_l-9682103-images-thumbs&n=13');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Учитываем padding в ширине */
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50; /* Зеленый */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  #rememberMe {
+    margin-right: 5px;
+  }

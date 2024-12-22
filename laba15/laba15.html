@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Форма входа</title>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="laba15.css">
+</head>
+<body>
+  <h1>Форма входа</h1>
+  <form id="loginForm">
+    <label for="username">Никнейм:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <span id="usernameError" class="error"></span><br>
+    <label for="password">Пароль:</label><br>
+    <input type="password" id="password" name="password" required><br>
+    <span id="passwordError" class="error"></span><br>
+    <input type="checkbox" id="rememberMe" name="rememberMe">
+    <label for="rememberMe">Запомнить меня</label><br>
+    <input type="submit" value="Войти">
+  </form>
+
+  <script src="script.js"></script> </body>
+</html>
